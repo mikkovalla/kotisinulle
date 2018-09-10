@@ -2,5 +2,7 @@
 ErrorDocument 404 http://www.kotisinulleoy.fi/404page.html
 
 RewriteEngine On
+RewriteCond %{HTTP_HOST} ^kotisinulleoy.fi [NC]
+RewriteRule ^(.*)$ http://www.kotisinulleoy.fi/$1 [L,R=301,NC]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

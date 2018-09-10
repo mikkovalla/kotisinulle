@@ -1,7 +1,7 @@
 <?php
 
     // yhteydet
-    $email_to = "kaisa.kuittinen@kotisinulleoy.fi";
+    $email_to = "info@kotisinulleoy.fi";
     $email_subject = "Yhteydenotto Koti Sinulle Oy www sivuilta";
 
     function died($error) {
